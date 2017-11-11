@@ -3,40 +3,60 @@
 <head>
     <!-- navibar -->
     <style>
+        body{
+            background: url("img/dark-bg.jpg") no-repeat;
+            background-size: 100%;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .header {
+            padding: 15;
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif
+        }
+   
+        .navibar {
+            float: left;
+            width: 15%;
+        }
+
         .navibar li {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             background: lightcyan;
-            width: 15%;
-            height: 50;
-            line-height: 50px;
+            height: 60;
+            line-height: 60px;
             font-size: 24px;
             color: green;
             text-align: center;
-            border: 5px solid black;
+            border: 5px solid transparent;
             list-style: none;
-            float: left;
-            vertical-align: center;
-        }
-
-        .navibar p {
-            height: 60;
+            vertical-align: middle;
         }
 
         .copyright p {
             text-align: center;
+            background-color: blue;
+            color: white;
+            line-height: 40px;
+            border: 5px solid lightblue;
+            vertical-align: middle;
         }
 
         .greetings {
             font-size: 20;
+            color: lightyellow;
             font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+            padding-left: 300;
         }
     </style>
 </head>
 
-<body background="img/.jpg">
-    <br>
-    <img src="img/google_logo1.png">
+<body>
+    <div class="header">
+        <p> <img src="img/google_logo1.png">An HTML/CSS Tutorial Website </p>
+    </div>
+
     <div class="navibar">
 
         <ul>
@@ -46,7 +66,6 @@
             <li>Contact</li>
 
         </ul>
-        <p>&nbsp;</p>
     </div>
     <div class="greetings">
         <p>Have you ever dreamed of creating a website yourself?</p>
@@ -54,34 +73,24 @@
         <p>Do you have trouble learning HTML/CSS?</p>
         <p>If your answers are YESes, why not have a try to teach yourself HTML/CSS on this site?
     </div>
-        <p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!-- copyright -->
-            <div class="copyright">
-                <p>@copyright&nbsp;2017&nbsp;Lu&nbsp;Sicheng,&nbsp;ZJNU</p>
-            </div>
+    <p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- copyright -->
+        <div class="copyright">
+            <p>@copyright&nbsp;2017&nbsp;Lu&nbsp;Sicheng,&nbsp;ZJNU</p>
+        </div>
 </body>
 
 </html>
