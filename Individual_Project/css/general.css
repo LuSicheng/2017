@@ -2,9 +2,12 @@
             background: url("../img/dark-bg.jpg") no-repeat;
             background-size: 100% 100%;
             font-weight: bold;
-            
+            margin: 0;
         }
-       
+        body a{
+            text-decoration: none;
+            color:auto;
+        }
         .header {
             padding: 15;
             color: lightblue;
@@ -16,6 +19,7 @@
                 text-decoration: underline;
         }
         .navibar {
+            text-decoration: none;
             float: left;
             width: 150px;
             border-collapse: collapse;
@@ -26,6 +30,7 @@
             font-weight: bold;
             background: lightcyan;
             height: 50;
+             width: 150px;
             line-height: 50px;
             font-size: 22px;
             color: green;
@@ -37,22 +42,25 @@
         }
 
         .copyright p {
-            position: relative;
-             top: 50px;
             text-align: center;
             background-color: darkblue;
             color: white;
             line-height: 40px;
             border: 2px solid lightblue;
             vertical-align: middle;
+            position: absolute;
+            left:0px;
+            right: 0px;
+            bottom: 0px;
         }
 
         .greetings {
             font-size: 20;
             color: lightyellow;
             font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-            position: relative;
-            padding-left: 200px;
+            position: absolute;
+            left:250px;
+          
         }
         .button{
             height: 150px;
