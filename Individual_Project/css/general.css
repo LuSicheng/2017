@@ -8,16 +8,40 @@
             text-decoration: none;
             color:auto;
         }
-        .header {
-            padding: 15;
+        .header{
+            position: relative;
+            left:15px;
+            top: 15px;
+        }
+        .header p {
+            padding-left: 250;
+            padding-top: 50;
+            color: lightblue;
+            font-size: 16;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline; 
+            text-align: right;
+            height: 70px;
+            width: 300px;
+            background: url("../img/google_logo1.png") no-repeat;
+        }
+
+      
+        .header p:hover{
+            padding-left: 250;
+            padding-top: 50;
             color: lightblue;
             font-size: 16;
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: underline;
+            text-align: right; 
+            height: 70px;
+            width: 300px;
+            background: url("../img/google_logo2.png")no-repeat;
+            background-size: 80px 80px;
+            background-position: 90px 15px;
         }
-         .header p{
-                text-decoration: underline;
-        }
+       
         .navibar {
             text-decoration: none;
             float: left;
