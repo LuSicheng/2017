@@ -1,20 +1,17 @@
         body{
-            background: url("../img/dark-bg.jpg") no-repeat;
-            background-size: 100% 100%;
-            font-weight: bold;
+            background: url("../img/dark-bg.jpg") ;
+            background-size: 100%;
+            right: 0px;
             margin: 0;
         }
         body a{
             text-decoration: none;
-            color:auto;
+           
         }
-        .header{
-            position: relative;
-            left:15px;
-            top: 15px;
-        }
+
         .header p {
-            padding-left: 250;
+            padding-left: 230;
+            padding-right: 0;
             padding-top: 50;
             color: lightblue;
             font-size: 16;
@@ -22,13 +19,14 @@
             text-decoration: underline; 
             text-align: right;
             height: 70px;
-            width: 300px;
-            background: url("../img/google_logo1.png") no-repeat;
+            width: 270px;
+            background: url("../img/google_logo1.png") no-repeat 15px 15px;
+            background-size: 220px 75px;
         }
 
       
         .header p:hover{
-            padding-left: 250;
+            padding-left: 230;
             padding-top: 50;
             color: lightblue;
             font-size: 16;
@@ -36,7 +34,7 @@
             text-decoration: underline;
             text-align: right; 
             height: 70px;
-            width: 300px;
+            width: 270px;
             background: url("../img/google_logo2.png")no-repeat;
             background-size: 80px 80px;
             background-position: 90px 15px;
@@ -45,16 +43,20 @@
         .navibar {
             text-decoration: none;
             float: left;
-            width: 150px;
+            width: 170px;
+            height: 100%;
             border-collapse: collapse;
+            position:absolute;
         }
 
         .navibar li {
+            margin-top: 5px;
+            margin-bottom: 5px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             background: lightcyan;
-            height: 50;
-             width: 150px;
+            height: 50px;
+             width: 100px;
             line-height: 50px;
             font-size: 22px;
             color: green;
@@ -65,33 +67,21 @@
              
         }
 
-        .copyright p {
-            text-align: center;
-            background-color: darkblue;
-            color: white;
-            line-height: 40px;
-            border: 2px solid lightblue;
-            vertical-align: middle;
-            position: absolute;
-            left:0px;
-            right: 0px;
-            bottom: 0px;
-        }
-
         .greetings {
+            
             font-size: 20;
             color: lightyellow;
             font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-            position: absolute;
-            left:250px;
-          
+            margin-left: 170px;
+            position: relative;       
         }
         .button{
+            text-align: center;
             height: 150px;
             width: 250px;
             position: relative;
-            left:50%;
-            top:30px;
+            padding-top: 15px;
+           margin: 0 auto;
         }
         .button table,td{
             padding: 10px;
@@ -101,3 +91,45 @@
             border:3px solid #333333; 
             border-collapse: collapse;
         }
+          .content { 
+            position: relative;
+            font-size: 20;
+            color: white;
+            margin-left: 200px;
+            right: 0px;
+            top:25px;
+            bottom: 50px;
+            float:none;
+            padding: 0;
+         
+          }
+         .content p,table{ 
+               position: relative;
+         }
+        .content table,td{
+            color: white;
+             border-collapse: collapse;
+            background: darkred;
+        }
+        .content thead{
+            position: relative;
+            width:100%;
+            text-align: center;
+        }
+        .copyright{
+            position: relative;
+            top:0px;
+            left:0px;
+            right: 0px;
+        }
+        .copyright p {
+            margin-top: 50px;
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            line-height: 40px;
+            border: 2px solid lightblue;
+           
+           
+        }
+      
