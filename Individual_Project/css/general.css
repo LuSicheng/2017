@@ -101,7 +101,7 @@
             bottom: 50px;
             float:none;
             padding: 0;
-         
+           
           }
          .content p,table{ 
                position: relative;
@@ -110,12 +110,25 @@
             color: white;
              border-collapse: collapse;
             background: darkred;
+            
         }
         .content thead{
             position: relative;
             width:100%;
             text-align: center;
         }
+        .content ul{
+             list-style: none;
+             position: relative;
+             margin-left: 0px;
+             padding: 0px;
+        }
+            .content li{
+                 border-bottom: yellow solid 1px;
+                  border-top:yellow solid 1px;
+                  border-collapse: collapse;
+                  padding:10px;
+            }
         .copyright{
             position: relative;
             top:0px;
