@@ -35,7 +35,7 @@
         </p>
         <ul>
             <li>What is HTML?
-                <p>HTML stands for HyperText Markuo Language.</p>
+                <p>HTML stands for HyperText Markup Language.</p>
                 <p>Unlike a scripting or programming language that uses scripts to perform functions, a markup language uses
                     tags to identify content.</script>
                 </p>
@@ -69,8 +69,161 @@
                                 <td>Content Management</td>
                             </tr>
                 </table>
-                <p>The ability to code using HTML is essential for any web professional. Acquiring this skill should be the starting point for
-                anyone who is learning how to create content for the web.</p>
+                <p>The ability to code using HTML is essential for any web professional. Acquiring this skill should be the
+                    starting point for anyone who is learning how to create content for the web.</p>
+            </li>
+            <li>
+                <h2>Basic HTML Structure</h2>
+                <h3>The &lt;html&gt; Tag</h3>
+
+                <p>Although various versions have been released over the years, HTML basics remain the same.</p>
+
+                <p>The structure of an HTML document has been compared with that of a sandwich. As a sandwich has two slices
+                    of bread, the HTML document has opening and closing HTML tags. </p>
+
+                <p>These tags, like the bread in a sandwich, surround everything else:</p>
+                <p>
+                    &lt;html&gt;
+                </p>
+                <p></p> …</p>
+                <p>
+
+                    &lt;/html&gt;
+                </p>
+                <p></p>
+                <h3> The &lt;head&gt; Tag</h3>
+
+                <p>Immediately following the opening HTML tag, you'll find the head of the document, which is identified by
+                    opening and closing head tags. </p>
+
+                <p>The head of an HTML file contains all of the non-visual elements that help make the page work.</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;…&lt;/head&gt;</p>
+                <p>&lt;/html&gt;</p>
+                <h3> The &lt;body&gt; Tag</h3>
+                The body tag follows the head tag. All visual-structural elements are contained within the body tag. Headings, paragraphs,
+                lists, quotes, images, and links are just a few of the elements that can be contained within the body tag.
+                Basic HTML Structure:
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p> &lt;/head&gt; </p>
+                <p>&lt;body&gt; </p>
+                <p>&lt;/body&gt;</p>
+                <p> &lt;/html&gt;</p>
+                <h3>The &lt;title&gt; Tag</h3>
+
+                <p>To place a title on the tab describing the web page, add a &lt;title&gt; element to your head section:</p>
+
+            </li>
+            <li>
+                <h2>Creating Your First HTML Page</h2>
+                <p>HTML files are text files, so you can use any text editor to create your first webpage. </p>
+                <p> There are some very nice HTML editors available; you can choose the one that works for you. For now let's
+                    write our examples in Notepad.</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;title&gt;first page&lt;/title&gt;</p>
+                <p> &lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>This is a line of text. </p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+
+            </li>
+
+            <li>
+                <h2>HTML Basics</h2>
+                <h3>Paragraphs</h3>
+                <h4>The &lt;p&gt; Element</h4>
+                <p>To create a paragraph, simply type in the &lt;p&gt; element with its opening and closing tags.</p>
+                <h4>Single Line Break</h4>
+                <p>Use the &lt;br /&gt; tag to add a single line of text without starting a new paragraph:</p>
+                <p>The &lt;br /&gt; element is an empty HTML element. It has no end tag.</p>
+                <h3>Formatting Elements</h3>
+                <p>This is regular text </p>
+                <p>
+                    <b> bold text </b>
+                </p>
+                <p>
+                    <big> big text </big>
+                </p>
+                <p>
+                    <i> italic text </i>
+                </p>
+                <p>
+                    <small> small text </small>
+                </p>
+                <p>
+                    <strong> strong text </strong>
+                </p>
+                <p>
+                    <sub> subscripted text </sub>
+                </p>
+                <p>
+                    <sup> superscripted text </sup>
+                </p>
+                <p>
+                    <ins> inserted text </ins>
+                </p>
+                <p>
+                    <del> delete</del>
+                </p>
+                <p>
+                    Browsers display &lt;strong&gt; as &lt;b&gt;, and &lt;em&gt; as &lt;i&gt;. However, the meanings of these tags differ: &lt;b&gt;
+                    and &lt;i&gt; define bold and italic text, respectively, while &lt;strong&gt; and &lt;em&gt; indicate
+                    that the text is "important".
+                </p>
+                <h2>Headings, Lines, Comments </h2>
+                <h3>HTML Headings </h3>
+
+                <p>HTML includes six levels of headings, which are ranked according to importance. </p>
+                <p>These are &lt;h1 &gt; , &lt;h2&gt; , &lt;h3&gt; , &lt;h4&gt; , &lt;h5&gt; , and &lt;h6&gt; . </p>
+                <h3>Horizontal Lines</h3>
+                <p>To create a horizontal line, use the &lt;hr /&gt; tag.</p>
+                <h3>Comments</h3>
+                <p>
+                    The browser does not display comments, but they help document the HTML and add descriptions, reminders, and other notes.</p>
+                <p>&lt;!-- Your comment goes here --&gt;</p>
+                <h2>HTML Elements </h2>
+                <p> HTML documents are made up of HTML elements.</p>
+                <p>An HTML element is written using a start tag and an end tag, and with the content in between.</p>
+
+                <p> HTML documents consist of nested HTML elements. In the example below, the body element includes the &lt;p&gt;
+                    tags, the &lt;br /&gt; tag and the content, "This is a paragraph".</p>
+
+                <p>Some elements are quite small. Since you can't put contents within a break tag, and you don't have an opening
+                    and closing break tag, it’s a separate, single element. </p>
+
+                <p>So HTML is really scripting with elements within elements.</p>
+                <h2>Attributes</h2>
+                <h3>HTML Attributes</h3>
+                <p>Attributes provide additional information about an element or a tag, while also modifying them. Most attributes
+                    have a value; the value modifies the attribute.</p>
+                <h3>Attribute Measurements</h3>
+                <p> As an example, we can modify the horizontal line so it has a width of 50 pixels.</p>
+                <p> This can be done by using the width attribute.</p>
+                <p> An element's width can also be defined using percentages.</p>
+                <h3>The Align Attribute</h2>
+                    <p>The align attribute is used to specify how the text is aligned.</p>
+                    <h2>Images</h2>
+                    <h3>The &lt;img&gt; Tag</h3>
+                    <p> The &lt;imgg&gt; tag is used to insert an image. It contains only attributes, and does not have a closing
+                        tag. </p>
+
+                    <p>The image's URL (address) can be defined using the src attribute.</p>
+
+                    <p>The HTML image syntax looks like this:</p>
+                    <p>&lt;img src="image.jpg" /&gt;</p>
+                    <h3>Image Location </h3>
+                    <p> You need to put in the image location for the src attribute that is between the quotation marks.</p>
+                    <p>In case the image cannot be displayed, the alt attribute specifies an alternate text that describes the
+                        image in words. The alt attribute is required.</p>
+                    <h3>Image Resizing</h3>
+                    <p>To define the image size, use the width and height attributes. The value can be specified in pixels or
+                        as a percentage.</p>
+                    <h3>Image Border</h3>
+                    <p>By default, an image has no borders. Use the border attribute within the image tag to create a border
+                        around the image.</p>
             </li>
         </ul>
         <p>Congratulations! You've got ready to learn CSS! Feel free to explore it!</p>
@@ -81,6 +234,7 @@
     <!-- copyright -->
     <div class="copyright">
         <p>@copyright&nbsp;2017&nbsp;Lu&nbsp;Sicheng,&nbsp;ZJNU</p>
+
     </div>
 </body>
 
