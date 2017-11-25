@@ -30,6 +30,7 @@
         </ul>
     </div>
     <div class="content">
+        <h1>CSS Tutorial</h1>
         <ul>
             <li>
                 <h2>What is CSS?</h2>
@@ -63,11 +64,82 @@
                 <p>Internal styles are defined within the &lt;style> element, inside the head section of an HTML page. </p>
                 <h3>External CSS </h3>
                 <p>With this method, all styling rules are contained in a single text file, which is saved with the .css extension.
-                    </p>
+                </p>
 
                 <p> This CSS file is then referenced in the HTML using the &lt;link> tag. The &lt;link> element goes inside the
                     head section.</p>
             </li>
+            <l1>
+                <h2>CSS Rules and Selectors</h2>
+                <h3>CSS Syntax</h3>
+                <p>CSS is composed of style rules that the browser interprets and then applies to the corresponding elements
+                    in your document. </p>
+                <p>A style rule has three parts: selector, property, and value. </p>
+                <p>Selector{Property: Value;}</p>
+                <p>The selector points to the HTML element you want to style.</p>
+                <p>The declaration block contains one or more declarations, separated by semicolons.</p>
+                <p>Each declaration includes a property name and a value, separated by a colon.</p>
+                <h2> Type Selectors</h2>
+
+                <p>The most common and easy to understand selectors are type selectors. This selector targets element types
+                    on the page.</p>
+
+                <p>For example, to target all the paragraphs on the page:</p>
+                <p>p { color: red; font-size:130%; }
+                </p>
+                <h2>id and class Selectors</h2>
+
+                <p>id selectors allow you to style an HTML element that has an id attribute, regardless of their position in
+                    the document tree. Here is an example of an id selector:</p>
+
+                <p>The HTML:</p>
+                <p> &lt;div id="intro"></p>
+                <p> &lt;p> This paragraph is in the intro section. &lt;/p></p>
+                <p> &lt;/div></p>
+                <p>&lt;p> This paragraph is not in the intro section. &lt;/p></p>
+
+                <p> The CSS:</p>
+                <p>#intro {</p>
+                <p> color: white;</p>
+                <p>background-color: gray;</p>
+                <p>}</p>
+                <p>Class selectors work in a similar way. The major difference is that IDs can only be applied once per page,
+                    while classes can be used as many times on a page as needed. </p>
+
+                <p>In the example below, both paragraphs having the class "first" will be affected by the CSS: </p>
+
+                <p> The HTML:</p>
+                <p>&lt;div></p>
+                <p>&lt;p class="first">This is a paragraph&lt;/p></p>
+                <p>&lt;p> This is the second paragraph. &lt;/p></p>
+                <p> &lt;/div></p>
+                <p>&lt;p class="first"> This is not in the intro section&lt;/p></p>
+                <p> &lt;p> The second paragraph is not in the intro section. &lt;/p></p>
+
+                <p>The CSS:</p>
+                <p>.first {font-size: 200%;}</p>
+                <h2>Descendant Selectors</h2>
+
+                <p>These selectors are used to select elements that are descendants of another element. When selecting levels,
+                    you can select as many levels deep as you need to.</p>
+
+                <p> For example, to target only &lt;em> elements in the first paragraph of the "intro" section:</p>
+
+                <p> The HTML:</p>
+                <p>&lt;div id="intro"></p>
+                <p> &lt;p class="first">This is a &lt;em> paragraph.&lt;/em>&lt;/p></p>
+                <p> &lt;p> This is the second paragraph. &lt;/p></p>
+                <p> &lt;/div></p>
+                <p> &lt;p class="first"> This is not in the intro section.&lt;/p></p>
+                <p> &lt;p> The second paragraph is not in the intro section. &lt;/p></p>
+
+                <p>The CSS:</p>
+                <p> #intro .first em {</p>
+                <p> color: pink; </p>
+                <p> background-color:gray;</p>
+                <p>}</p>
+                <p> As a result, only the elements selected will be affected:</p>
+            </l1>
         </ul>
         <p>Congratulations! You've finished learning the fundamentals of HTML and CSS!</p>
     </div>
