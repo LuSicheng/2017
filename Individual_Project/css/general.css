@@ -145,4 +145,11 @@
            
            
         }
-      
+        h1{
+            color: green;
+            font-family: Arial;
+            font-weight: bold;
+        }
+      h2{
+          color: gray;
+      }
