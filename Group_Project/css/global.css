@@ -23,7 +23,7 @@ html,body{
 	margin-bottom: 0px;
 	border: medium solid #00C;
 }
-.ctnt{
+.content{
 	height: 600px;
 	border: medium solid #06F;
 	margin-top: 20px;
@@ -31,14 +31,14 @@ html,body{
 	margin-bottom: 20px;
 	margin-left: auto;
 }
-.main_ctnt{
+.main{
 	height: 550px;
 	width: 720px;
 	border: medium solid #00C;
 	float: left;
 	margin-left: 20px;
 }
-.navg{
+.navibar{
 	border: medium solid #09F;
 	float: left;
 	height: 550px;
