@@ -4,44 +4,51 @@ html,body{
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
-.con{
-	float: left;
-	height: 300px;
-	width: 300px;
-	margin-left: 200px;
-	color: #039;
-	
-}
-.hd{
+
+.header{
 	height: 30px;
 	width: auto;
 	border: medium solid #03C;
 }
 
-.ft{
+.footer{
 	height: 30px;
 	margin-bottom: 0px;
 	border: medium solid #00C;
 }
+.navibar {
+	text-decoration: none;
+	float: left;
+	width: 160px;
+	border-collapse: collapse;
+	position:absolute;
+	border: medium solid #09F;
+	margin-top: 20px;
+}
+
+.navibar li,a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background: yellow;
+	color: red;
+	text-decoration: none;
+	height: 50px;
+	 width: 100px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	margin:5px;
+	list-style: none;
+	vertical-align: middle;
+	
+}
 .content{
 	height: 600px;
 	border: medium solid #06F;
+	
 	margin-top: 20px;
-	margin-right: 0px;
+	margin-right: 40%;
 	margin-bottom: 20px;
-	margin-left: auto;
-}
-.main{
-	height: 550px;
-	width: 720px;
-	border: medium solid #00C;
-	float: left;
-	margin-left: 20px;
-}
-.navibar{
-	border: medium solid #09F;
-	float: left;
-	height: 550px;
-	width: 200px;
-	margin-left: 20px;
+	margin-left:170px;
+	position: relative;
 }
