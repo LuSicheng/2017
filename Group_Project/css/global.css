@@ -6,23 +6,19 @@ html,body{
 }
 
 .header{
-	height: 30px;
-	width: auto;
-	border: medium solid #03C;
+	margin: 20px; 
+	height: 100px;
+	font-family: Arial;
+	color: lightyellow;
+	font-size: 60px;
 }
 
-.footer{
-	height: 30px;
-	margin-bottom: 0px;
-	border: medium solid #00C;
-}
 .navibar {
 	text-decoration: none;
 	float: left;
 	width: 160px;
 	border-collapse: collapse;
 	position:absolute;
-	border: medium solid #09F;
 	margin-top: 20px;
 }
 
@@ -51,4 +47,14 @@ html,body{
 	margin-bottom: 20px;
 	margin-left:170px;
 	position: relative;
+}
+.footer p {
+	margin-top: 50px;
+	text-align: center;
+	background-color: darkblue;
+	color: white;
+	line-height: 40px;
+	border: 2px solid lightblue;
+   
+   
 }
