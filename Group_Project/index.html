@@ -6,9 +6,28 @@
 	<title>index</title>
 	<link href="css/global.css" rel='stylesheet' type='text/css' />
 	<link rel="shortcut icon" href="img/favicon.ico" />
+
 </head>
 
 <body>
+	<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="songs/陈奕迅-圣诞结.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+	<span onclick="play();">Play/Pause</span>
+	<span onclick="replay();">Replay</span>
+	<script>
+		function play(){
+			var audio=document.getElementById('bg_music');
+			if(audio.paused){
+				audio.play();
+			}
+			else{
+				audio.pause();
+			}
+		}
+		function replay(){
+			var audio=document.getElementById('bg_music');
+			audio.currentTime=0;
+		}
+	</script>
 	<!--head-->
 	<div class="header">
 		<img src="img/logo.png" width="100px" alt="G Christmas">G Xmas
