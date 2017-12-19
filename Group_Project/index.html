@@ -3,31 +3,35 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>index</title>
+	<title>🎄G Christmas</title>
 	<link href="css/global.css" rel='stylesheet' type='text/css' />
 	<link rel="shortcut icon" href="img/favicon.ico" />
 
 </head>
 
 <body>
-	<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="songs/陈奕迅-圣诞结.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-	<span onclick="play();">Play/Pause</span>
-	<span onclick="replay();">Replay</span>
-	<script>
-		function play(){
-			var audio=document.getElementById('bg_music');
-			if(audio.paused){
-				audio.play();
+	<div class="mini_music_player">
+		<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="songs/陈奕迅-圣诞结.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+		<span onclick="play();">Play/Pause</span>
+		<span onclick="replay();">Replay</span>
+		<script>
+			function play() {
+				var audio = document.getElementById('bg_music');
+				if (audio.paused) {
+					audio.play();
+				}
+				else {
+					audio.pause();
+				}
 			}
-			else{
-				audio.pause();
+			function replay() {
+				var audio = document.getElementById('bg_music');
+				audio.currentTime = 0;
+				
 			}
-		}
-		function replay(){
-			var audio=document.getElementById('bg_music');
-			audio.currentTime=0;
-		}
-	</script>
+		</script>
+	</div>
+	<hr />
 	<!--head-->
 	<div class="header">
 		<img src="img/logo.png" width="100px" alt="G Christmas">G Xmas
