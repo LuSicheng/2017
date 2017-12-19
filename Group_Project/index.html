@@ -5,32 +5,25 @@
 	<meta charset="utf-8">
 	<title>index</title>
 	<link href="css/global.css" rel='stylesheet' type='text/css' />
+    <script src="js/index.js"></script>
 	<link rel="shortcut icon" href="img/favicon.ico" />
 
 </head>
 
 <body>
-	<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="songs/陈奕迅-圣诞结.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-	<span onclick="play();">Play/Pause</span>
-	<span onclick="replay();">Replay</span>
-	<script>
-		function play(){
-			var audio=document.getElementById('bg_music');
-			if(audio.paused){
-				audio.play();
-			}
-			else{
-				audio.pause();
-			}
-		}
-		function replay(){
-			var audio=document.getElementById('bg_music');
-			audio.currentTime=0;
-		}
-	</script>
-	<!--head-->
+	<audio autoplay="autoplay" controls loop preload="auto" src="songs/陈奕迅-圣诞结.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+	<span onclick="play();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)" >Play/Pause</span>
+	<span onclick="replay();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)" >Replay</span>
+    <hr style="color:#FFF">
+    <script src="js/index.js">
+		play();
+		replay();
+	    mOver(this);
+		mOut(this);
+    </script>
+<!--head-->
 	<div class="header">
-		<img src="img/logo.png" width="100px" alt="G Christmas">G Xmas
+		<img src="img/logo.png" alt="G Christmas" width="60" height="60">G Xmas
 	</div>
 
 
@@ -61,7 +54,12 @@
 		</ul>
 	</div>
 	<!--content-->
-	<div class="content">
+	<div class="content" style="color : #CCC; font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;">
+	  <h2><em><strong>  Christmas is also called Christmas day, Jesus's birthday, translated as "Christ mass", the western traditional festivals, in December 25th every year. Mass is a church service. Christmas is a religious festival, as it is celebrated as the birthday of Jesus, hence the name of "Christmas." 
+	    
+      Most of the Catholic Church will be first in the 24 days of Christmas Eve, in December 25th the early morning at midnight mass, and some Christian churches will be held good news report, then in December 25th to celebrate Christmas; another major branch of the Christian Orthodox Christmas celebration on January 7th every year.
+	    
+	    Christmas is also a public holiday in the western world and in many other regions, such as Hongkong, Macao, Malaysia and Singapore in Asia. The Church of ancient Rome, in the age of Constantin (313 A.D.), became accustomed to celebrating the birth of the Lord in December 25th.</strong></em></h2>
 	</div>
 
 
