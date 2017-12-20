@@ -14,16 +14,19 @@
 </head>
 
 <body>
-    <audio autoplay="autoplay" controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-    <span onclick="play();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>
-    <span onclick="replay();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-    <hr style="color:#FFF">
-    <script src="js/index.js">
-        play();
-        replay();
-        mOver(this);
-        mOut(this);
-    </script>
+    <div class="mini_music_player">
+        <audio autoplay="autoplay" controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span onclick="play();"onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+        <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+        <hr style="color:#FFF">
+        <script src="js/index.js">
+            play();
+            replay();
+            mOver(this);
+            mOut(this);
+        </script>
+    </div>
     <!--head-->
     <div class="header">
         <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas
@@ -82,7 +85,9 @@
                 on Christmas Day in most countries. Others practice gift giving on December 6, Saint Nicholas Day, and January
                 6, Epiphany.
             </p>
-            <p align="center"><img src="img/Map_of_Countries_that_do_not_recognize_Christmas_as_Public_Holiday.png" width="80%" ></p>
+            <p align="center">
+                <img src="img/Map_of_Countries_that_do_not_recognize_Christmas_as_Public_Holiday.png" width="80%">
+            </p>
         </h2>
     </div>
 
