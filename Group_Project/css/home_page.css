@@ -5,6 +5,9 @@ html,body{
 	background-attachment: fixed;
 }
 .content{
+	color:lightgray;
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+	font-size:14pt;
 	margin-top: 20px;
 	margin-right: 40%;
 	margin-bottom: 220px;

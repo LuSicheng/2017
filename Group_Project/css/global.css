@@ -1,5 +1,6 @@
 .mini_music_player{
 	color: white;
+
 }
 .header{
 	height: 60px;
@@ -27,7 +28,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	background: rgb(255, 255, 199);
-	
 	height: 50px;
 	 width: 100px;
 	 line-height: 50px;

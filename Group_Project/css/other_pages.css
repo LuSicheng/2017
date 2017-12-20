@@ -5,7 +5,8 @@ html,body{
 	background-attachment: fixed;
 }
 .content{
-
+	color:lightgray;
+	font-size: 12;
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 170px;
