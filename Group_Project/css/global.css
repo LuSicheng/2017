@@ -1,5 +1,6 @@
 .mini_music_player{
 	color: white;
+	font-size: 14px;
 
 }
 .header{
@@ -66,6 +67,7 @@
 	color: black;
 	line-height: 30px;
 	border: 0px outset rgba(120, 120, 120,0.5);
+	font-size: 18px;
    
    
 }
