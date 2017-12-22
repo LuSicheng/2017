@@ -14,3 +14,15 @@ html,body{
 	background-color: rgba(0,0,0,0.5);
 	margin-right: 40px;
 }
+.content script {
+	color: #C0C0C0;
+}
+.game {
+	height: 300px;
+	width: 100px;
+	margin-left: 400px;
+	position: absolute;
+	left: 4px;
+	top: 85px;
+	border: thick double rgba(204,204,204,1);
+}
