@@ -14,18 +14,20 @@
 
 <body>
 	<div class="mini_music_player">
-		<audio autoplay="autoplay" controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-		Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<span onclick="play();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
-		<span onclick="replay();" style="color: #FFF; font-size: 18px;" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-		<hr style="color:#FFF">
-		<script src="js/index.js">
-			play();
-			replay();
-			mOver(this);
-			mOut(this);
-		</script>
-	</div>
+        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+		<span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+		<span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+		<span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+        <hr>
+        <script src="js/mini_music_player.js">
+            play();
+            replay();
+            mOver(this);
+            mOut(this);
+        </script>
+    </div>
 	<!--head-->
 	<div class="header">
 		<img src="img/logo.png" alt="G Christmas" width="60" height="60">G Xmas
