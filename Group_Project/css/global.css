@@ -10,7 +10,8 @@
 	float: right;
 }
 hr{
-	margin-top: -15px;
+	margin-top: 0px;
+	font: 10px;
 }
 .header{
 	float:none;

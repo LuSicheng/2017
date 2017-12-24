@@ -5,30 +5,32 @@
 <head>
     <meta charset="utf-8">
     <title>G Xmas</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
 
-    <script src="js/index.js"></script>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="js/mini_music_player.js"></script>
+	<script src="js/date_and_time.js">	</script>
+
 
 </head>
 
-<body>
-    <div class="mini_music_player">
-        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
-		<span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-		<span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
-		<span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+<body onload="startTime()">
+        <span class="mini_music_player">
+            
+            <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+            Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+            <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+            <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+            <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+            
+        
+        </span>
+        <span id="date_and_time"><script type="text/javascript" src="js/date_and_time.js">	</script>
+        </span>
+        <br>
         <hr>
-        <script src="js/mini_music_player.js">
-            play();
-            replay();
-            mOver(this);
-            mOut(this);
-        </script>
-    </div>
     <!--head-->
     <div class="header">
         <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas

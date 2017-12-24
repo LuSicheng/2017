@@ -7,15 +7,14 @@
     <title>G Xmas</title>
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
-
-    <script src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" />
-
+    <script src="js/mini_music_player.js"></script>
+	<script src="js/date_and_time.js">	</script>
 </head>
 
-<body>
+<body onload="startTime()"> 
     <span class="mini_music_player">
-        <script src="js/mini_music_player.js"></script>
+
         <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
         Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
@@ -26,7 +25,6 @@
 
     </span>
     <span id="date_and_time">
-        </script>
     </span>
     <br>
     <hr>
