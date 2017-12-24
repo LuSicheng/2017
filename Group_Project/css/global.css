@@ -3,12 +3,15 @@
 	font-size: 14px;
 	float: left;
 }
+
 #date_and_time{
 	color: white;
 	font-size: 14px;
 	float: right;
 }
-
+hr{
+	margin-top: -15px;
+}
 .header{
 	float:none;
 	height: 60px;

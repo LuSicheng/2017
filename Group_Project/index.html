@@ -27,21 +27,12 @@
 			mOut(this);
 		</script>
 	</span>
-		<span id="date_and_time">.....</span>
-		<script>
-			function startTime() {
-				var today = new Date();
-				var h = today.getHours();
-				var m = today.getMinutes();
-				var s = today.getSeconds();
-				document.getElementById('date_and_time').innerHTML = (h<10?"0"+h:h) + ":" +(m<10?"0"+m:m )+ ":" + (s<10?"0"+s:s );
-				t = setTimeout(function () {
-					startTime()
-				}, 1000);
-			}
+	<span id="date_and_time">
+		<script src="js/date_and_time.js">
 			startTime();
 		</script>
-		<br>
+	</span>
+	<br>
 	<hr>
 	<!--head-->
 	<div class="header">
