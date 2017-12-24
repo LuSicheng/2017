@@ -11,6 +11,7 @@ for (var i = 0; i < piece.length; i++) {
     piece[i].style.left = Math.ceil(Math.random() * maxWidth) + "px";
     piece[i].style.top = Math.random() *maxHeight + "px";
     piece[i].style.fontSize=Math.ceil(Math.random()*20) +15+"pt";
+    piece[i].style.weight="bold";
     canvas.appendChild(piece[i]);
 }
 setInterval(function () {
