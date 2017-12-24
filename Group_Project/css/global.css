@@ -1,9 +1,16 @@
-.mini_music_player{
+.mini_music_player {
 	color: white;
 	font-size: 14px;
-
+	float: left;
 }
+#date_and_time{
+	color: white;
+	font-size: 14px;
+	float: right;
+}
+
 .header{
+	float:none;
 	height: 60px;
 	font-family: Arial;
 	color: lightyellow;
