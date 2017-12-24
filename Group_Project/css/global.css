@@ -14,14 +14,14 @@ hr{
 	font: 10px;
 }
 .header{
-	float:none;
+	float: none;
 	height: 60px;
 	font-family: Arial;
 	color: lightyellow;
 	font-size: 40px;
 	margin-top: 0px;
 	margin-right: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 	margin-left: 30px;
 }
 
@@ -68,7 +68,7 @@ hr{
 }
 
 .footer{
-	margin-top: 20px;
+	margin-top: 10px;
 	position: relative;
 	bottom: 0px;
 	text-align: center;

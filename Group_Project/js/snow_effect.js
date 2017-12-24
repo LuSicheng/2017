@@ -24,4 +24,4 @@ setInterval(function () {
             piece[i].style.top = 0 + "px";
         }
     }
-}, 300);
+}, 10);
