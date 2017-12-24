@@ -4,7 +4,8 @@ function startTime() {
     var m = today.getMinutes();
     var s = today.getSeconds();
     document.getElementById('date_and_time').innerHTML = (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s);
-    t = setTimeout(function () {
+    setTimeout(function () {
         startTime()
-    }, 1000);
+    }, 500);
 }
+startTime();
