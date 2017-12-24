@@ -8,3 +8,4 @@ function startTime() {
         startTime()
     }, 1000);
 }
+startTime();

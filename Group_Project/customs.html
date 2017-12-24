@@ -14,27 +14,22 @@
 </head>
 
 <body>
-	<span class="mini_music_player">
-		<audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-		Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
-		<span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-		<span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
-		<span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
-		<script src="js/mini_music_player.js">
-			play();
-			replay();
-			mOver(this);
-			mOut(this);
-		</script>
-	</span>
-	<span id="date_and_time">
-		<script src="js/date_and_time.js">
-			startTime();
-		</script>
-	</span>
-	<br>
-	<hr>
+    <span class="mini_music_player">
+        <script src="js/mini_music_player.js"></script>
+        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+        <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+        <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+        <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+
+
+    </span>
+    <span id="date_and_time">
+        </script>
+    </span>
+    <br>
+    <hr>
     <!--head-->
     <div class="header">
         <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas
