@@ -7,26 +7,25 @@
     <title>G Xmas</title>
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
-
-    <script src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" />
-
 </head>
 
-<body>
-    <div class="mini_music_player">
-        <audio autoplay="autoplay" controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+<body onload="startTime()">
+    <span class="mini_music_player">
+
+        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
         Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
         <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-        <hr style="color:#FFF">
-        <script src="js/index.js">
-            play();
-            replay();
-            mOver(this);
-            mOut(this);
-        </script>
-    </div>
+        <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+        <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+
+
+    </span>
+    <span id="date_and_time">
+    </span>
+    <br>
+    <hr>
     <!--head-->
     <div class="header">
         <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas
@@ -62,30 +61,19 @@
     <!--content-->
     <div class="content">
         <h1>Christmas Game</h1>
-        <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,1); background: Black"></canvas>  
-    <script>  
-        var sn = [ 42, 41 ], dz = 43, fx = 1, n, ctx = document.getElementById("can").getContext("2d");  
-        function draw(t, c) {  
-            ctx.fillStyle = c;  
-            ctx.fillRect(t % 20 * 20 + 1, ~~(t / 20) * 20 + 1, 18, 18);  
-        }  
-        document.onkeydown = function(e) {  
-            fx = sn[1] - sn[0] == (n = [ -1, -20, 1, 20 ][(e || event).keyCode - 37] || fx) ? fx : n  
-        };  
-        !function() {  
-            sn.unshift(n = sn[0] + fx);  
-            if (sn.indexOf(n, 1) > 0 || n<0||n>399 || fx == 1 && n % 20 == 0 || fx == -1 && n % 20 == 19)  
-                return alert("GAME OVER");  
-            draw(n, "Lime");  
-            if (n == dz) {  
-                while (sn.indexOf(dz = ~~(Math.random() * 400)) >= 0);  
-                draw(dz, "Yellow");  
-            } else  
-                draw(sn.pop(), "Black");  
-                setTimeout(arguments.callee, 130);  
-        }();  
-    </script> 
-    <br><br><br><br><br>
+        <div id="food" class="game">
+            FOOD:
+            <a id="out"></a>
+
+        </div>
+        <br>
+        <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,0.5); background: Black"></canvas>
+        <script src="js/game_js.js"></script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
 
@@ -94,5 +82,7 @@
         <p>@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
     </div>
 </body>
-
+<script type="text/javascript" src="js/mini_music_player.js"></script>
+<script type="text/javascript" src="js/date_and_time.js">	</script>
+<script type="text/javascript" src="js/snow_effect.js">	</script>
 </html>
