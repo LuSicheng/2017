@@ -1,4 +1,4 @@
-var canvas = document.body;
+
 var piece = new Array(50);
 
 for (var i = 0; i < piece.length; i++) {
@@ -6,19 +6,19 @@ for (var i = 0; i < piece.length; i++) {
     piece[i].style.color = "#fff";
     piece[i].innerHTML = "*";
     piece[i].style.position = "absolute";
-    piece[i].style.left = Math.ceil(Math.random() * canvas.clientWidth) + "px";
-    piece[i].style.top = Math.random() *canvas.clientHeight + "px";
+    piece[i].style.left = Math.ceil(Math.random() * document.body.clientWidth) + "px";
+    piece[i].style.top = Math.random() *document.body.clientHeight + "px";
     piece[i].style.fontSize=Math.ceil(Math.random()*20) +15+"pt";
     piece[i].style.weight="bold";
-    canvas.appendChild(piece[i]);
+    document.body.appendChild(piece[i]);
 }
 setInterval(function () {
     for (var i = 0; i < piece.length; i++) {
-        if (parseInt(piece[i].style.top) < canvas.clientHeight-100) {
+        if (parseInt(piece[i].style.top) < document.body.clientHeight-100) {
             piece[i].style.top = parseFloat(piece[i].style.top) + Math.random()*3 + "px";
-            piece[i].style.left=Math.min(Math.max(0,parseFloat(piece[i].style.left)+Math.random()*3-1.5),canvas.clientWidth) + "px";
+            piece[i].style.left=Math.min(Math.max(0,parseFloat(piece[i].style.left)+Math.random()*3-1.5),document.body.clientWidth) + "px";
         } else {
-            piece[i].style.left = Math.random() * canvas.clientWidth + "px";
+            piece[i].style.left = Math.random() * document.body.clientWidth + "px";
             piece[i].style.top = 0 + "px";
         }
     }
