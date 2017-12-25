@@ -16,7 +16,7 @@ setInterval(function () {
     for (var i = 0; i < piece.length; i++) {
         if (parseInt(piece[i].style.top) < document.body.clientHeight-100) {
             piece[i].style.top = parseFloat(piece[i].style.top) + Math.random()*3 + "px";
-            piece[i].style.left=Math.min(Math.max(0,parseFloat(piece[i].style.left)+Math.random()*3-1.5),document.body.clientWidth-30) + "px";
+            piece[i].style.left=Math.min(Math.max(0,parseFloat(piece[i].style.left)+Math.random()*3-1.5),document.body.clientWidth-40) + "px";
         } else {
             piece[i].style.left = Math.random() * document.body.clientWidth + "px";
             piece[i].style.top = 0 + "px";
