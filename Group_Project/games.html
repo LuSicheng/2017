@@ -8,10 +8,9 @@
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
     <link rel="shortcut icon" href="img/favicon.ico" />
-    
 </head>
 
-<body onload="startTime()">
+<body onLoad="checkCookie()">
     <span class="mini_music_player">
 
         <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
@@ -76,7 +75,7 @@
       </div>
         <span onclick="game();" onmouseover="mOver(this)" onmouseout="mOut(this)">Medium</span>&nbsp;&nbsp;
         <span onclick="game_fast();" onmouseover="mOver(this)" onmouseout="mOut(this)">Difficult</span>&nbsp;&nbsp;
-        <span onclick="game_slow();" onmouseover="mOver(this)" onmouseout="mOut(this)">Easy</span>
+        <span onclick="game_slow();" onmouseover="mOver(this)" onmouseout="mOut(this)">Easy</span>&nbsp;&nbsp;user:qc&nbsp;&nbsp;BEST:50
         <br>
       <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,0.5); background: Black"></canvas>
         
