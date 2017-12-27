@@ -9,7 +9,7 @@ html,body{
 	font-size: 12;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 170px;
+	margin-left:200px;
 	position: relative;
 	background-color: rgba(0,0,0,0.5);
 	margin-right: 40px;
@@ -29,4 +29,23 @@ html,body{
 	left: 5px;
 	top: 90px;
 	border: thick double rgba(204,204,204,1);
+	float: left;
+}
+.game_introduction{
+	height: 401px;
+	width: 500px;
+	margin-left: 400px;
+	position: absolute;
+	left: 182px;
+	top: 86px;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: rgba(204,204,204,1);
+	border-right-color: rgba(204,204,204,1);
+	border-bottom-color: rgba(204,204,204,1);
+	border-left-color: rgba(204,204,204,1);
+	
 }

@@ -11,7 +11,7 @@ function game(){
 	// 在画布上画背景或者贪食蛇方格
 	// 第一个参数是坐标信息, 第二个是颜色信息(用来区分背景和蛇)
 	function draw(t, c ) {
-	  ctx.fillStyle = c;
+	  ctx.fillStyle = c ;
 	  // fillReact的签名是: fillRect(x: number, y: number, w: number, h: number): void;
 	  // 所以画的方格的宽高都是18, 加上默认的lineWidth=1, 所以每个方格的长宽都是20
 	  // 参数t用一个标量标志二维坐标信息, t % 20即t/20的余数部分表示横坐标是第几个方格
@@ -60,7 +60,7 @@ function game(){
 		// 新的食物的位置不能在蛇身上
 		while (sn.indexOf(dz = ~~(Math.random() * 400)) >= 0);
 		// 更新食物
-		draw(dz, "Red");
+		draw(dz, "Blue");
 		food++;//food++
 		length++;
 		a:var out=document.getElementById('out');//将food在输出框输出
@@ -246,4 +246,45 @@ function game_slow(){
 	  // 每隔vms更新
 		setTimeout(update, v);
 	}();
+}
+
+     
+function getCookie(c_name)
+{
+	if (document.cookie.length>0)
+	{ 
+		c_start=document.cookie.indexOf(c_name + "=")
+		if (c_start!=-1)
+		{ 
+			c_start=c_start + c_name.length+1 
+			c_end=document.cookie.indexOf(";",c_start)
+			if (c_end==-1) c_end=document.cookie.length
+			return unescape(document.cookie.substring(c_start,c_end))
+		} 
+	}
+	return ""
+}
+
+function setCookie(c_name,value,expiredays)
+{
+	var exdate=new Date()
+	exdate.setDate(exdate.getDate()+expiredays)
+	document.cookie=c_name+ "=" +escape(value)+
+	((expiredays==null) ? "" : "; expires="+exdate.toGMTString())
+}
+
+function checkCookie()
+{
+	username=getCookie('username')
+	if (username!=null && username!="")
+  	{alert('Welcome again '+username+'!')}
+	else 
+  	{
+  		username=prompt('Please enter your name:',"")
+  		if (username!=null && username!="")
+		{
+			setCookie('username',username,365)
+		}
+ 	}
 };
+	

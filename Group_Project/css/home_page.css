@@ -16,3 +16,8 @@ html,body{
 	position: relative;
 	font-style: italic;
 }
+.content p {
+	font-size: larger;
+	font-weight: bold;
+	font-style: italic;
+}
