@@ -4,7 +4,7 @@ function game(){
 	  fx = 1, // 蛇前进的方向
 	  n, // 蛇头位置
 	  food = -1,
-	  v = 200,
+	  v = 100,
 	  length = 2,
 	  time = 0,
 	  ctx = document.getElementById("can").getContext("2d"); // 画布
