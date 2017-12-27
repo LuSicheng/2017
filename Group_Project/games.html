@@ -62,29 +62,35 @@
     <!--content-->
     <div class="content">
         <h1>Christmas Game</h1>
-        <div id="food" class="game">
+      <div id="food" class="game">
             Food:
             <a id="out"></a>
             Length:
             <a id="v"></a>
             Time:
             <a id="time"></a>s
-
         </div>
-        <span onclick="game();" onmouseover="mOver(this)" onmouseout="mOut(this)">PLAY</span>
+        <div class="game_introduction">
+          <p>这条宠物蛇在圣诞节迷失了方向，需要通过我们的帮助使他找到回家的路，从而和家人团聚，过圣诞。</p>
+          <p>首先，你可以点击“PLAY”按钮开始游戏，进入游戏后可以通过方向键控制小蛇的移动，从而吃到圣诞食物，当你吃到50个食物时你将获胜。</p>
+        </div>
+        <span onclick="game();" onmouseover="mOver(this)" onmouseout="mOut(this)">Medium</span>&nbsp;&nbsp;
+        <span onclick="game_fast();" onmouseover="mOver(this)" onmouseout="mOut(this)">Difficult</span>&nbsp;&nbsp;
+        <span onclick="game_slow();" onmouseover="mOver(this)" onmouseout="mOut(this)">Easy</span>
         <br>
-        <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,0.5); background: Black"></canvas>
+      <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,0.5); background: Black"></canvas>
+        
         <br>
         <br>
         <br>
         <br>
-        <br>
+      <br>
     </div>
 
 
     <!--footer-->
     <div class="footer">
-        <p>@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
+        <p align="center">@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
     </div>
 </body>
 <script type="text/javascript" src="js/mini_music_player.js"></script>
