@@ -11,23 +11,24 @@
 </head>
 
 <body onLoad="checkCookie()">
-    <span class="mini_music_player">
-        <span onclick="showOrHideSnow()">Show/Hide Snow</span>
-        &nbsp; &nbsp; &nbsp;
-        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
-        <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-        <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
-        <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
-
-
-    </span>
-    <span id="date_and_time">
-    </span>
-    <br>
-    <hr>
+        <span onclick="showOrHideSnow()">Show/Hide Snow</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <span class="mini_music_player">
+      
+          
+            <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+            Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;
+    
+            <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+            <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+            <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+            <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+    
+    
+        </span>
+        <span id="date_and_time">
+            </span>
+            <br>
+        <hr>
     <!--head-->
     <div class="header">
         <a href="index.html">
@@ -79,7 +80,7 @@
         </div>
         <span onclick="game();" onmouseover="mOver(this)" onmouseout="mOut(this)">Medium</span>&nbsp;&nbsp;
         <span onclick="game_fast();" onmouseover="mOver(this)" onmouseout="mOut(this)">Difficult</span>&nbsp;&nbsp;
-        <span onclick="game_slow();" onmouseover="mOver(this)" onmouseout="mOut(this)">Easy</span>&nbsp;&nbsp;user:qc&nbsp;&nbsp;BEST:50
+        <span onclick="game_slow();" onmouseover="mOver(this)" onmouseout="mOut(this)">Easy</span>&nbsp;&nbsp;Game record:<span id="record"></span>
         <br>
         <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,0.5); background: Black"></canvas>
 

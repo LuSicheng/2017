@@ -12,11 +12,12 @@
 </head>
 
 <body onload="startTime()">
+    <span onclick="showOrHideSnow()">Show/Hide Snow</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     <span class="mini_music_player">
-        <span onclick="showOrHideSnow()">Show/Hide Snow</span>
-        &nbsp; &nbsp; &nbsp;
+
+
         <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;
 
         <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
         <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
@@ -98,6 +99,6 @@
 </body>
 <script type="text/javascript" src="js/mini_music_player.js"></script>
 <script type="text/javascript" src="js/date_and_time.js">	</script>
-<script type="text/javascript" src="js/snow_effect.js">	</script>
+<script type="text/javascript" src="js/snow_effect.js"></script>
 
 </html>

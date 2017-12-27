@@ -1,12 +1,17 @@
-.mini_music_player {
+body a{
+	text-decoration: none;
+
+}
+span{
 	color: white;
 	font-size: 14px;
-	float: left;
+}
+.mini_music_player {
+	color: lightcyan;
 }
 
 #date_and_time{
-	color: white;
-	font-size: 14px;
+	
 	float: right;
 }
 hr{

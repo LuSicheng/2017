@@ -1,5 +1,4 @@
 var piece = new Array(50);
-function showSnow() {
 
 
     for (var i = 0; i < piece.length; i++) {
@@ -24,22 +23,16 @@ function showSnow() {
             }
         }
     }, 15);
-}
-showSnow();
-function hideSnow() {
-    for (var i = 0; i < piece.length; i++) {
-        piece[i].innerHTML = "";
-    }
-}
+
 function showOrHideSnow() {
-    if(piece[0].innerHTML = ""){
+    if(piece[0].innerHTML == " "){
         for (var i = 0; i < piece.length; i++) {
             piece[i].innerHTML = "*";
         }
-        showSnow();
     }
     else {
-    
-        hideSnow();
+        for (var i = 0; i < piece.length; i++) {
+            piece[i].innerHTML = " ";
+        }
     }
 }
