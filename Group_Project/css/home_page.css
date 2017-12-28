@@ -16,6 +16,7 @@ html,body{
 	margin-left: 200px;
 	position: relative;
 	font-style: italic;
+	/*border: 1px solid blue */
 }
 .content p {
 	font-size: larger;
