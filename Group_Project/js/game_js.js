@@ -33,7 +33,8 @@ function checkCookie()
     {
       setCookie("username",user);
     }
-  }
+	}
+	document.getElementById('record').innerHTML="qc 50";
 }
 function game() {
 	var sn = [42, 41], // 存放贪食蛇的坐标, 第一个是头, 最后一个是尾, 初始的蛇长度是2, 坐标[2, 2], [1, 2]
